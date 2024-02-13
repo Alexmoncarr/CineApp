@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="sources\aquaman_y_el_reino_perdido_2023.jpg" />
+    <None Remove="sources\Argylle_2024.jpg" />
+    <None Remove="sources\Beekeeper_El_protector_2024.jpg" />
+    <None Remove="sources\Captura de pantalla 2024-02-05 123225.jpg" />
+    <None Remove="sources\Chicas_malas_2024.jpg" />
+    <None Remove="sources\cinema.jpeg" />
+    <None Remove="sources\Cualquiera_menos_tu_2023 %281%29.jpg" />
+    <None Remove="sources\Cualquiera_menos_tu_2023.jpg" />
+    <None Remove="sources\Cuando_acecha_la_maldad_2023.jpg" />
+    <None Remove="sources\ferrari_2023.jpg" />
+    <None Remove="sources\La_piscina_2024.jpg" />
+    <None Remove="sources\ocho_apellidos_marroquis_2023.jpg" />
+    <None Remove="sources\wonka_2023.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="sources\aquaman_y_el_reino_perdido_2023.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\Argylle_2024.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\Beekeeper_El_protector_2024.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\Captura de pantalla 2024-02-05 123225.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\Chicas_malas_2024.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\Cualquiera_menos_tu_2023 (1).jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\Cualquiera_menos_tu_2023.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\Cuando_acecha_la_maldad_2023.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\ferrari_2023.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\La_piscina_2024.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\ocho_apellidos_marroquis_2023.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="sources\wonka_2023.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="sources\cinema.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
