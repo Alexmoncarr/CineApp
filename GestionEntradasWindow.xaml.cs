@@ -53,8 +53,13 @@ public partial class GestionEntradasWindow : Window
 
         if (entradaSeleccionada != null)
         {
-            RegistrarEntradaWindow.EntradasRegistradas.Remove(entradaSeleccionada);
-            ActualizarListaEntradas();
+            var result = MessageBox.Show("¿Eliminar entrada?", "Eliminar", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if ( result == MessageBoxResult.Yes )
+            {
+                RegistrarEntradaWindow.EntradasRegistradas.Remove(entradaSeleccionada);
+                ActualizarListaEntradas();
+            }
+            
         }
     }
     private void Volver_Click(object sender, RoutedEventArgs e)

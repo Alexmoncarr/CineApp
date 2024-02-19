@@ -51,7 +51,7 @@ namespace CineApp.models
                         break;
                     case nameof(Fecha):
                         //la fecha no puede ser en el pasado
-                        if (Fecha < DateTime.Now)
+                        if (Fecha <= DateTime.Now)
                         {
                             result = "La fecha no puede ser en el pasado.";
                         }

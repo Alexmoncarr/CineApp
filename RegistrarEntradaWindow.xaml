@@ -11,7 +11,7 @@
         <Label Content="Nombre:"/>
         <TextBox x:Name="TextBoxNombre" Text="{Binding Nombre, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource MyValidationStyle}"/>
         <Label Content="Fecha:"/>
-        <DatePicker x:Name="DatePickerFecha"  SelectedDate="{Binding Fecha, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>
+        <DatePicker  x:Name="DatePickerFecha"  SelectedDate="{Binding Fecha, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Content="Hora:"/>
         <TextBox x:Name="TextBoxHora" Text="{Binding Hora, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
         <Label Content="Película:"/>

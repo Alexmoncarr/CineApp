@@ -31,10 +31,29 @@ public partial class RegistrarEntradaWindow : Window
 
     private void Registrar_Click(object sender, RoutedEventArgs e)
     {
+        // Validar entrada antes de registrar
+        var hasErrors = false;
+        var properties = typeof(RegistroEntrada).GetProperties();
+        foreach (var property in properties)
+        {
+            var error = registroEntrada[property.Name];
+            if (!string.IsNullOrEmpty(error))
+            {
+                hasErrors = true;
+                MessageBox.Show(error, "Error de validación", MessageBoxButton.OK, MessageBoxImage.Error);
+                break; // Rompe el ciclo al encontrar el primer error
+            }
+        }
+
+        if (hasErrors)
+        {
+            ProgressBarCompra.Visibility = Visibility.Collapsed;
+            return; // Detiene la ejecución si hay errores
+        }
         ProgressBarCompra.Visibility = Visibility.Visible;
         // Aquí recoges la información de los campos
         var cliente = TextBoxNombre.Text;
-        var fecha = DatePickerFecha.SelectedDate.GetValueOrDefault();
+        var fecha = DatePickerFecha.SelectedDate.Value;
         var hora = TextBoxHora.Text;
         var peliculaSeleccionada = (Movie)ComboBoxPeliculas.SelectedItem;
 

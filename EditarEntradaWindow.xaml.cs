@@ -25,6 +25,7 @@ public partial class EditarEntradaWindow : Window
         InitializeComponent();
         entradaActual = entrada;
         ComboBoxPeliculas.ItemsSource = CarteleraWindow.Movies;
+        this.DataContext = entradaActual;
         CargarDatosEntrada();
     }
 
@@ -38,11 +39,14 @@ public partial class EditarEntradaWindow : Window
 
     private void GuardarCambios_Click(object sender, RoutedEventArgs e)
     {
+
         // Aquí actualizas la entrada con los nuevos datos
         entradaActual.Cliente = TextBoxNombre.Text;
         entradaActual.Fecha = DatePickerFecha.SelectedDate.GetValueOrDefault();
         entradaActual.Hora = TextBoxHora.Text;
         entradaActual.Pelicula = (Movie)ComboBoxPeliculas.SelectedItem;
+
+        MessageBox.Show("Entrada actualizada con éxito", "Confirmación", MessageBoxButton.OK, MessageBoxImage.Information);
 
         this.Close();
     }

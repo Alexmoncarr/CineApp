@@ -29,3 +29,4 @@ C:\Users\aleja\OneDrive\Documentos\VisualStudioProyectos\CineApp\obj\Debug\net8.
 C:\Users\aleja\OneDrive\Documentos\VisualStudioProyectos\CineApp\obj\Debug\net8.0-windows\CineApp.pdb
 C:\Users\aleja\OneDrive\Documentos\VisualStudioProyectos\CineApp\obj\Debug\net8.0-windows\CineApp.genruntimeconfig.cache
 C:\Users\aleja\OneDrive\Documentos\VisualStudioProyectos\CineApp\obj\Debug\net8.0-windows\ref\CineApp.dll
+C:\Users\aleja\OneDrive\Documentos\VisualStudioProyectos\CineApp\obj\Debug\net8.0-windows\CineApp.sourcelink.json
